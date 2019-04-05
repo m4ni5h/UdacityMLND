@@ -1,0 +1,8 @@
+How would you select the last 100 rows of a 2-dimensional NumPy array 'X'?
+X[-100;,]
+
+Given a Pandas dataframe 'df' with columns 'gender' and 'age', how would you compute the average age for each gender?
+df.GroupBy('gender')('age').mean()
+
+Which of the following commands would you use to visualize the distribution of 'height' values in a Pandas dataframe 'df'?
+df['height'].plot(kind='box')
