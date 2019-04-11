@@ -14323,9 +14323,9 @@ Standard deviation of prices: $165171.13154429474
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <ol>
-<li>For a higher RM(number of rooms), I would expect to observe a higher MEDV(Price).</li>
-<li>For a higher LSTAT(percent of lower class workers), I would expect to observe a a lower MEDV(Price).</li>
-<li>For a higher PTRAITO(ratio of student to teachers), I would expect to observe a lower MEDV(Price).</li>
+<li>For a higher RM(number of rooms), I would expect to observe a higher MEDV(Price). The same can be seen in figure 1 when we plot Number of Rooms - Price Relation</li>
+<li>For a higher LSTAT(percent of lower class workers), I would expect to observe a a lower MEDV(Price). The same can be seen in figure 2 when we plot % of lower class - Price Relation</li>
+<li>For a higher PTRAITO(ratio of student to teachers), I would expect to observe a lower MEDV(Price). The same can be seen in figure 2 when we plot Ratio of Student to Teacher - Price Relation.</li>
 </ol>
 <p>Following are the plots justifying the answers:</p>
 
@@ -14923,8 +14923,9 @@ Grid Search is a technique to tune the hyper-parameters and find the best optimi
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>k-fold cross-validation is a training technique where the original sample is randomly partitioned into k equal sized sub-samples.</p>
-<p>From the k sub-samples, a single sub-sample is retained as the validation data for testing the model, and the remaining k − 1 subsamples are used as training data. The cross-validation process is then repeated k times, with each of the k subsamples used exactly once as the validation data. The k results can then be averaged to produce a single estimation as the overall result of the model.</p>
+<p>k-fold cross-validation is a training technique where the training sample (a part of the original sample) is randomly partitioned into k equal sized sub-samples.</p>
+<p>From the k sub-samples, a single sub-sample is retained as the validation data for testing the model, and the remaining k − 1 subsamples are used as training data. The cross-validation process is then repeated k times, with each of the k subsamples used exactly once as the validation data. The k results can then be averaged to produce a single estimation as the overall result of the model called cross validation error. 
+This Cross Validation error help us do the model selection. The selected model is again is validated with world data (the data which is part of original sample after the training sample). The result thus obtained gives us a better idea of how the model will work in a real world scenario.</p>
 <p>The advantage of this method is that all observations are used for both training and validation, and each observation is used for validation exactly once and thus making the process more data-efficient reducing the waste too which is a major advantage in problems where the data samples is small.</p>
 
 </div>
