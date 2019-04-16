@@ -51,6 +51,7 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
     return boundary_lines
 
 plotdata = pd.read_csv('data.csv') 
+
 print(plotdata)
 # plotdata.plot()
 # plt.plot([plotdata[0]], [plotdata[1]], 'ro')
