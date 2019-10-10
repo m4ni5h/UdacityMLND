@@ -53,7 +53,7 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 plotdata = pd.read_csv('data.csv') 
 
 print(plotdata)
-# plotdata.plot()
-# plt.plot([plotdata[0]], [plotdata[1]], 'ro')
-# plt.axis([0, 6, 0, 20])
-# plt.show()
+plotdata.plot()
+plt.plot([plotdata.iloc[:,0]], [plotdata.iloc[:,1]], 'ro')
+plt.axis([0, 6, 0, 20])
+plt.show()
